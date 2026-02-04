@@ -1,0 +1,67 @@
+% !TEX program = xelatex
+\documentclass[runningheads]{llncs}
+
+% --- 패키지 설정 ---
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage[normalem]{ulem}
+
+% 이미지 경로 설정 (figures 폴더 안에 그림이 있을 경우)
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+% --- 논문 제목 (Title Case) ---
+\title{Microstructure-Based Finite Element Model for High-Pressure Die-Cast Al--Si--Cu Alloys: Effect of $\alpha$-Al Particle on Plasticity and Ductile Fracture}
+
+\titlerunning{Microstructure-Based FEM for HPDC Al--Si--Cu Alloys}
+
+% --- 저자 정보 ---
+\author{
+    \uline{Kyungmin Lee}\inst{1} \and
+    Seunghyo Hong\inst{2} \and
+    Eungmin Lee\inst{2} \and
+    Myoung-Gyu Lee\inst{2}\thanks{Corresponding author: myounglee@snu.ac.kr}
+}
+
+\authorrunning{K. Lee et al.}
+
+% --- 소속 및 이메일 ---
+\institute{
+    Graduate School of Engineering Practice, Seoul National University, Seoul 08826, Republic of Korea\\
+    \email{minlee@snu.ac.kr}
+    \and
+    Department of Materials Science and Engineering \& RIAM, Seoul National University, Seoul 08826, Republic of Korea\\
+    \email{\{shhong0816, rod3723, myounglee\}@snu.ac.kr}
+}
+
+\maketitle 
+
+\begin{abstract}
+This study presents an enhanced finite element simulation framework for predicting the flow stress and ductile fracture behavior of high-pressure die-cast (HPDC) Al--Si--Cu alloys. In HPDC alloys, the applicability of the secondary dendrite arm spacing (SDAS) as a representative microstructural descriptor is limited due to dendrite fragmentation induced by high-speed turbulent filling. To address this issue, the present work introduces the size of fragmented $\alpha$-Al particles as the primary microstructural variable. The proposed multi-scale model is developed based on a previously established framework in which eutectic Si particle fracture is described by Weibull statistics coupled with the Gurson--Tvergaard--Needleman (GTN) ductile fracture model. The key extension of this study is the incorporation of the $\alpha$-Al particle size dependence into the constitutive description of matrix flow stress. The predictive capability of the model is evaluated through tensile and fracture experiments conducted on specimens with different particle sizes. The results demonstrate that the proposed approach effectively captures the characteristic microstructural features of HPDC alloys and enables accurate prediction of both flow stress and fracture behavior, highlighting the essential role of $\alpha$-Al particle size in fracture modeling of HPDC alloys.
+
+\keywords{HPDC \and Al--Si--Cu alloys \and $\alpha$-Al particle \and Ductile fracture \and GTN model}
+\end{abstract}
+
+\section{Introduction}
+High-pressure die-casting (HPDC) is an essential manufacturing process for producing complex-shaped aluminum components in the automotive industry. The mechanical properties of these alloys are highly dependent on their microstructural features. As shown in Fig.~\ref{fig1}, the microstructure typically consists of...
+
+\begin{figure}
+\centering
+% figures 폴더 안에 fig1.eps가 있어야 합니다.
+\includegraphics[width=0.8\textwidth]{fig1.eps}
+\caption{Microstructure of the HPDC Al--Si--Cu alloy showing fragmented particles.}
+\label{fig1}
+\end{figure}
+
+\section{Conclusion}
+This study successfully developed an enhanced FEM framework that incorporates $\alpha$-Al particle size. The results highlight the importance of...
+
+% --- 참고문헌 ---
+% bib 폴더 안에 실제 .bib 파일이 있다면 아래 주석을 풀고 파일명을 맞추세요.
+% \bibliographystyle{splncs04}
+% \bibliography{bib/your_bib_file} 
+
+\end{document}

@@ -1,0 +1,43 @@
+% !TEX program = xelatex
+\documentclass[runningheads]{llncs}
+
+% 1. 설정 파일 불러오기
+\input{preamble}
+
+\begin{document}
+
+% --- 저자 및 제목 정보 ---
+\title{Microstructure-Based Finite Element Model for High-Pressure Die-Cast Al--Si--Cu Alloys: Effect of $\alpha$-Al Particle on Plasticity and Ductile Fracture}
+\titlerunning{Microstructure-Based FEM for HPDC Al--Si--Cu Alloys}
+
+\author{
+    Kyungmin Lee\inst{1} \and
+    Seunghyo Hong\inst{2} \and
+    Eungmin Lee\inst{2} \and
+    Myoung-Gyu Lee\inst{2}\thanks{Corresponding author: myounglee@snu.ac.kr}
+}
+\authorrunning{K. Lee et al.}
+
+\institute{
+    Graduate School of Engineering Practice, Seoul National University, Seoul 08826, Republic of Korea\\
+    \email{minlee@snu.ac.kr}
+    \and
+    Department of Materials Science and Engineering \& RIAM, Seoul National University, Seoul 08826, Republic of Korea\\
+    \email{\{shhong0816, rod3723, myounglee\}@snu.ac.kr}
+}
+
+\maketitle 
+
+% 2. 초록 불러오기
+\input{sections/00_abstract}
+
+% 3. 본문 섹션들 불러오기
+\input{sections/01_introduction}
+% \input{sections/02_methods}  % 나중에 추가될 파일들
+\input{sections/06_conclusion}
+
+% 4. 참고문헌
+\bibliographystyle{splncs04}
+\bibliography{bib/references} 
+
+\end{document}

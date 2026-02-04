@@ -1,0 +1,44 @@
+% !TEX program = xelatex
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{setspace}
+\usepackage[normalem]{ulem} % ★ 이 패키지가 반드시 있어야 \uline이 작동합니다.
+
+\begin{document}
+
+% --- 제목 ---
+\begin{center}
+    {\fontsize{14}{16}\selectfont \bfseries
+    MICROSTRUCTURE-BASED FINITE ELEMENT MODEL FOR HIGH-PRESSURE DIE-CAST AL-SI-CU ALLOYS:
+    EFFECT OF $\alpha$-AL PARTICLE ON PLASTICITY AND DUCTILE FRACTURE}
+\end{center}
+
+\vspace{1em}
+
+% --- 저자 (발표자 밑줄) ---
+\begin{center}
+    {\fontsize{12}{14}\selectfont \bfseries
+    \uline{Kyungmin Lee}\textsuperscript{1},
+    Seunghyo Hong\textsuperscript{2},
+    Eungmin Lee\textsuperscript{2},
+    Myoung-Gyu Lee\textsuperscript{2,*}}
+\end{center}
+
+\vspace{1em}
+
+% --- 소속 및 이메일 ---
+\begin{center}
+    {\fontsize{12}{14}\selectfont \bfseries
+    \textsuperscript{1} Graduate School of Engineering Practice, Seoul National University, Seoul 08826, Republic of Korea, minlee@snu.ac.kr \\
+    \textsuperscript{2} Department of Materials Science and Engineering \& RIAM, Seoul National University, Seoul 08826, Republic of Korea, shhong0816@snu.ac.kr, rod3723@snu.ac.kr, myounglee@snu.ac.kr}
+\end{center}
+
+\vspace{1em}
+
+\noindent
+\textbf{ABSTRACT}-This study presents an enhanced finite element simulation framework for predicting the flow stress and ductile fracture behavior of high-pressure die-cast (HPDC) Al--Si--Cu alloys. In HPDC alloys, the applicability of the secondary dendrite arm spacing (SDAS) as a representative microstructural descriptor is limited due to dendrite fragmentation induced by high-speed turbulent filling. To address this issue, the present work introduces the size of fragmented $\alpha$-Al particles as the primary microstructural variable. The proposed multi-scale model is developed based on a previously established framework in which eutectic Si particle fracture is described by Weibull statistics coupled with the Gurson--Tvergaard--Needleman (GTN) ductile fracture model. The key extension of this study is the incorporation of the $\alpha$-Al particle size dependence into the constitutive description of matrix flow stress. The predictive capability of the model is evaluated through tensile and fracture experiments conducted on specimens with different particle sizes. The results demonstrate that the proposed approach effectively captures the characteristic microstructural features of HPDC alloys and enables accurate prediction of both flow stress and fracture behavior, highlighting the essential role of $\alpha$-Al particle size in fracture modeling of HPDC alloys.
+
+\end{document}
